@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    background-color: #181818;
+    border-radius: 5px;
+}
+
+.task-input {
+    outline: none;
+    border: none;
+    width: 300px;
+    padding: 4px 6px 4px 6px;
+    background-color: #6147ff;
+    color: #e3e3e3;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.task-input::placeholder {
+    color: #e3e3e3;
+}
+
+.task-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    padding: 5px;
+    background-color: #101010;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    max-width: 250px;
+}
+
+.task-remove {
+    font-size: 22px;
+    color: red;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.task-complete {
+    padding-left: 5px;
+    cursor: pointer;
+}
